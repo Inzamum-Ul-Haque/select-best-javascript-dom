@@ -37,3 +37,16 @@ main {
 .selected-players {
   line-height: 55px;
 }
+
+input {
+  width: 121px;
+  height: 40px;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.total {
+  color: #ff5e19;
+}
