@@ -18,3 +18,7 @@ document
     li.innerText = playerName;
     selectedPlayerList.appendChild(li);
   });
+
+document
+  .getElementById("btn-calculate")
+  .addEventListener("click", function () {});
