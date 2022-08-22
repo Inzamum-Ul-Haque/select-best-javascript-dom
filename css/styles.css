@@ -26,7 +26,6 @@ header .img-1 {
 header .img-2 {
   width: 380px;
   height: 420px;
-  aspect-ratio: 0;
   position: absolute;
   bottom: -25px;
   right: 0;
