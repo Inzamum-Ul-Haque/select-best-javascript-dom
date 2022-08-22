@@ -9,3 +9,8 @@ function getElementValue(inputId) {
   const elementValue = parseFloat(elementValueString);
   return elementValue;
 }
+
+function setElementValue(inputId, value) {
+  const element = document.getElementById(inputId);
+  element.innerText = value;
+}

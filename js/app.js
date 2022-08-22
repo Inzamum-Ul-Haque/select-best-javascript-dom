@@ -1,6 +1,7 @@
 document
   .getElementById("btn-select")
   .addEventListener("click", function (event) {
+    //select player list
     const selectedPlayerList = document.getElementById("selected-player-list");
     if (selectedPlayerList.childElementCount >= 5) {
       alert("You cannot add more than 5 players");
@@ -19,6 +20,16 @@ document
     selectedPlayerList.appendChild(li);
   });
 
-document
-  .getElementById("btn-calculate")
-  .addEventListener("click", function () {});
+document.getElementById("btn-calculate").addEventListener("click", function () {
+  //count how many players
+  const selectedPlayerList = document.getElementById("selected-player-list");
+  const playersCount = selectedPlayerList.childElementCount;
+
+  const budget = getInputFieldValue("input-budget");
+
+  //calculate player expense
+  const expense = playersCount * budget;
+
+  //set player expense value
+  setElementValue("player-expense", expense);
+});
