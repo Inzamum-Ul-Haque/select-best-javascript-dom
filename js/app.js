@@ -33,3 +33,17 @@ document.getElementById("btn-calculate").addEventListener("click", function () {
   //set player expense value
   setElementValue("player-expense", expense);
 });
+
+document
+  .getElementById("btn-calculate-total")
+  .addEventListener("click", function () {
+    //get manager, coach and player expenses
+    const manager = getInputFieldValue("manager-budget");
+    const coach = getInputFieldValue("coach-budget");
+    const playerExpense = getElementValue("player-expense");
+
+    const total = manager + coach + playerExpense;
+
+    //set total value
+    setElementValue("total-expense", total);
+  });
