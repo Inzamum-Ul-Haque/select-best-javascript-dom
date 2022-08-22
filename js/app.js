@@ -1,6 +1,11 @@
 document
   .getElementById("btn-select")
   .addEventListener("click", function (event) {
+    //check if the click is outside the button
+    if (event.target.innerText !== "Select") {
+      return;
+    }
+
     //select player list
     const selectedPlayerList = document.getElementById("selected-player-list");
     if (selectedPlayerList.childElementCount >= 5) {
@@ -9,6 +14,7 @@ document
     }
 
     if (event.target.innerText === "Select") {
+      console.log(event.target);
       event.target.classList.add("disabled");
     }
 

@@ -8,10 +8,28 @@
 
 header {
   height: 70vh;
+  position: relative;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header .img-1 {
+  width: 412px;
+  height: 460px;
+  position: absolute;
+  bottom: 0;
+  left: -35px;
+}
+
+header .img-2 {
+  width: 380px;
+  height: 420px;
+  aspect-ratio: 0;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
 }
 
 .heading {
@@ -58,7 +76,7 @@ input {
 .disabled {
   background-color: #a2a9af !important;
   border-color: #a2a9af !important;
-  pointer-events: none;
+  cursor: default;
 }
 
 footer {
