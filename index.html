@@ -28,7 +28,7 @@
     <main>
       <div class="container py-5">
         <div class="row mb-3">
-            <div class="col-9">
+            <div id="btn-select" class="col-9">
                 <div class="row mb-3">
                     <div class="col">
                         <div class="card bg-dark" style="width: 18rem">
@@ -42,7 +42,7 @@
                             <p class="card-text text-center text-white-50">
                               36 Goals | 120 Assist
                             </p>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Select</a>
+                            <a  class="btn btn-primary d-block mx-auto select">Select</a>
                           </div>
                         </div>
                       </div>
@@ -58,7 +58,7 @@
                             <p class="card-text text-center text-white-50">
                               25 Goals | 80 Assist
                             </p>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Select</a>
+                            <a  class="btn btn-primary d-block mx-auto select">Select</a>
                           </div>
                         </div>
                       </div>
@@ -74,7 +74,7 @@
                             <p class="card-text text-center text-white-50">
                               60 Goals | 56 Assist
                             </p>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Select</a>
+                            <a  class="btn btn-primary d-block mx-auto select">Select</a>
                           </div>
                         </div>
                       </div>
@@ -92,7 +92,7 @@
                             <p class="card-text text-center text-white-50">
                               125 Goals | 70 Assist
                             </p>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Select</a>
+                            <a  class="btn btn-primary d-block mx-auto select">Select</a>
                           </div>
                         </div>
                       </div>
@@ -110,7 +110,7 @@
                             <p class="card-text text-center text-white-50">
                               120 Goals | 80 Assist
                             </p>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Select</a>
+                            <a  class="btn btn-primary d-block mx-auto select">Select</a>
                           </div>
                         </div>
                       </div>
@@ -128,7 +128,7 @@
                             <p class="card-text text-center text-white-50">
                               45 Goals | 30 Assist
                             </p>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Select</a>
+                            <a  class="btn btn-primary d-block mx-auto select">Select</a>
                           </div>
                         </div>
                       </div>
@@ -146,7 +146,7 @@
                             <p class="card-text text-center text-white-50">
                               36 Goals | 120 Assist
                             </p>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Select</a>
+                            <a  class="btn btn-primary d-block mx-auto select">Select</a>
                           </div>
                         </div>
                       </div>
@@ -164,7 +164,7 @@
                             <p class="card-text text-center text-white-50">
                               65 Goals | 90 Assist
                             </p>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Select</a>
+                            <a  class="btn btn-primary d-block mx-auto select">Select</a>
                           </div>
                         </div>
                       </div>
@@ -182,7 +182,7 @@
                             <p class="card-text text-center text-white-50">
                               85 Goals | 78 Assist
                             </p>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Select</a>
+                            <a  class="btn btn-primary d-block mx-auto select">Select</a>
                           </div>
                         </div>
                       </div>
@@ -195,12 +195,7 @@
                           <div class="card-body">
                             <h5 class="card-title text-white text-center fw-bold">Selected-V</h5>
                             <p class="card-text">
-                              <ol class="text-white selected-players">
-                                <li>Lionel Messi</li>
-                                <li>Lionel Messi</li>
-                                <li>Lionel Messi</li>
-                                <li>Lionel Messi</li>
-                                <li>Lionel Messi</li>
+                              <ol id="selected-player-list" class="text-white selected-players">
                               </ol>
                             </p>
                           </div>
@@ -216,9 +211,9 @@
                                 <label class="me-5" for="">Per Player</label> 
                                 <input type="text">
                             </div>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Calculate</a>
+                            <a  class="btn btn-primary d-block mx-auto">Calculate</a>
                             <div class="card-text text-white-50 my-3">
-                                <p class="text-white-50">Player Expenses <span class="text-white ps-3">$<span>5000</span></span></p>
+                                <p class="text-white-50">Player Expenses <span class="text-white ps-5">$<span>5000</span></span></p>
                                 <div class="card-text text-white-50 my-3 d-flex justify-content-between align-items-center">
                                     <label for="">Manager</label> 
                                     <input type="text">
@@ -228,9 +223,9 @@
                                     <input type="text">
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-primary d-block mx-auto">Calculate Total</a>
+                            <a  class="btn btn-primary d-block mx-auto">Calculate Total</a>
                             <div class="card-text text-white-50 my-3">
-                                <p class="text-white-50 mt-0">Total <span class="total ms-5">$<span>11000</span></span></p>
+                                <p class="text-white-50 mt-0">Total <span class="total ps-5">$<span>11000</span></span></p>
                             </div>
                           </div>
                         </div>
@@ -240,6 +235,9 @@
         </div>
       </div>
     </main>
+    <footer class="d-flex justify-content-center align-items-center">
+        <p>Copyright @ 2022 All Rights Reserved.</p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

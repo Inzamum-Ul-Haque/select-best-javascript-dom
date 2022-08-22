@@ -50,3 +50,20 @@ input {
 .total {
   color: #ff5e19;
 }
+
+.btn-primary {
+  background-color: #015196 !important;
+}
+
+.disabled {
+  background-color: #a2a9af !important;
+  border-color: #a2a9af !important;
+  pointer-events: none;
+}
+
+footer {
+  border-top: 1px solid gray;
+  background-color: #151515;
+  height: 25vh;
+  color: white;
+}
