@@ -26,6 +26,10 @@ document.getElementById("btn-calculate").addEventListener("click", function () {
   const playersCount = selectedPlayerList.childElementCount;
 
   const budget = getInputFieldValue("input-budget");
+  if (budget === "null") {
+    alert("Please provide a valid number in input field!!");
+    return;
+  }
 
   //calculate player expense
   const expense = playersCount * budget;
@@ -41,9 +45,19 @@ document
     const manager = getInputFieldValue("manager-budget");
     const coach = getInputFieldValue("coach-budget");
     const playerExpense = getElementValue("player-expense");
+    if (manager === "null" || coach === "null") {
+      alert("Please provide a valid number in input field!!");
+      return;
+    }
 
     const total = manager + coach + playerExpense;
 
     //set total value
     setElementValue("total-expense", total);
+  });
+
+document
+  .getElementById("input-budget")
+  .addEventListener("keyup", function (event) {
+    console.log(event.target.value);
   });

@@ -1,5 +1,9 @@
 function getInputFieldValue(inputId) {
   const fieldValueString = document.getElementById(inputId).value;
+  //validation check
+  if (isNaN(fieldValueString) || fieldValueString == "") {
+    return "null";
+  }
   const fieldValue = parseFloat(fieldValueString);
   return fieldValue;
 }
