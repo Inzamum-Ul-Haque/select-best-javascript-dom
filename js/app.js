@@ -31,9 +31,13 @@ document.getElementById("btn-calculate").addEventListener("click", function () {
   const selectedPlayerList = document.getElementById("selected-player-list");
   const playersCount = selectedPlayerList.childElementCount;
 
+  //validation check
   const budget = getInputFieldValue("input-budget");
   if (budget === "null") {
     alert("Please provide a valid number in input field!!");
+    return;
+  } else if (budget === "negative") {
+    alert("Please provide a valid positive number!!!");
     return;
   }
 
@@ -51,8 +55,13 @@ document
     const manager = getInputFieldValue("manager-budget");
     const coach = getInputFieldValue("coach-budget");
     const playerExpense = getElementValue("player-expense");
+
+    //validation check
     if (manager === "null" || coach === "null") {
       alert("Please provide a valid number in input field!!");
+      return;
+    } else if (manager === "negative" || coach === "negative") {
+      alert("Please provide a valid positive number!!!");
       return;
     }
 

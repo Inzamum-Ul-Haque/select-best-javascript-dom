@@ -5,6 +5,9 @@ function getInputFieldValue(inputId) {
     return "null";
   }
   const fieldValue = parseFloat(fieldValueString);
+  if (fieldValue < 0) {
+    return "negative";
+  }
   return fieldValue;
 }
 
